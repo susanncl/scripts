@@ -19,11 +19,11 @@ module --quiet purge 		#this resets the module environment, always good to start
 
 ##ACCEPT argument
 FILENAME=$1
+
 module load BIOS-IN5410/HT-2023
 
 ##create a gvcf.list
-ls *gvcf.gz > gvcf.list # This creates a text file with all the HaplotypeCalled.gvcf.gz
-filenames.
+ls *gvcf.gz > gvcf.list # This creates a text file with all the HaplotypeCalled.gvcf.gz.filenames.
 ##force create and remove an empty directory (needed to prevent errors when rerunning)
 mkdir -p ${FILENAME}_DB; rm -r ${FILENAME}_DB
 ##run GATK database import (2nd step)
